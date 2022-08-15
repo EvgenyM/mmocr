@@ -1,5 +1,5 @@
 dataset_type = 'TextDetDataset'
-data_root = 'data/synthtext'
+data_root = '/home/evgeny/datasets/synthtext'
 
 train = dict(
     type=dataset_type,

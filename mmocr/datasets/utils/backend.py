@@ -70,9 +70,9 @@ class LmdbAnnFileBackend:
             if self.deprecated_format:
                 line = txn.get(str(index).encode('utf-8')).decode(
                     self.encoding)
-                filename, text = line.strip('/n').split(' ')
-                line = json.dumps(
-                    dict(filename=filename, text=text), ensure_ascii=False)
+                # filename, text = line.strip('/n').split(' ')
+                # line = json.dumps(
+                #     dict(filename=filename, text=text), ensure_ascii=False)
             else:
                 index = index + 1
                 label_key = f'label-{index:09d}'
